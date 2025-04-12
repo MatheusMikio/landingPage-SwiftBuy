@@ -1,0 +1,7 @@
+*{
+    font-family: 'Questrial';
+}
+
+.filter-blue {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(85%) saturate(3619%) hue-rotate(244deg) brightness(94%) contrast(94%);
+}
