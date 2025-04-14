@@ -8,25 +8,20 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col bg-[#FFFFFF] overflow-x-hidden">
 
     <!-- Barra Superior -->
 
-    <div 
-    class="flex justify-between items-center w-full shadow-lg bg-[#B9D3FF] h-25 "
-    id="barraSuperior">
-        <a 
-        href="index.html">
+    <div class="flex justify-between items-center w-full shadow-lg bg-[#F9FAFB] h-20 " id="barraSuperior">
+        <a href="index.html">
             <img 
                 src="assets/img/logo.png" 
-                class="w-80 h-60 filter-blue min-w-[200px] min-h-[150px]"
+                class="w-50 h-50 filter-blue min-w-[200px] min-h-[150px]"
                 alt="Logo SwiftBuy"
             >
         </a>
 
-        <button 
-        class="max-[955px]:block hidden px-4 py-2 text-[#3533cb] cursor-pointer ml-auto mr-20"
-        id="menuBtn">
+        <button class="max-[955px]:block hidden px-4 py-2 text-[#030712] cursor-pointer ml-auto mr-20" id="menuBtn">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
@@ -34,96 +29,72 @@
 
         <!-- Menu Desktop -->
 
-        <nav 
-        class="hidden min-[955px]:block w-420">
-            <ul 
-            class="flex justify-around items-center h-40 text-3xl text-[#3533cb]">
+        <nav class="hidden min-[955px]:block w-420">
+            <ul class="flex justify-around items-center h-40  font-semibold text-[16px] text-[#030712]">
                 <li>
-                    <a 
-                    href="#sobreNos" 
-                    class="hover:text-[#4789F9] transition-colors">
+                    <a href="#sobreNos" class="hover:text-[#4F46E5] transition-colors">
                         Quem somos
                     </a>
                 </li>
+
                 <li>
-                    <a 
-                    href="#objetivo" 
-                    class="hover:text-[#4789F9] transition-colors">
+                    <a href="#objetivo" class="hover:text-[#4F46E5] transition-colors">
                         Objetivo
                     </a>
                 </li>
+
                 <li>
-                    <a 
-                    href="#escopo" 
-                    class="hover:text-[#4789F9] transition-colors">
+                    <a href="#escopo" class="hover:text-[#4F46E5] transition-colors">
                         Escopo
                     </a>
                 </li>
+
                 <li>
-                    <a 
-                    href="#requisitos" 
-                    class="hover:text-[#4789F9] transition-colors">
+                    <a href="#requisitos" class="hover:text-[#4F46E5] transition-colors">
                         Requisitos
                     </a>
                 </li>
+
                 <li>
-                    <a 
-                    href="#tecnologia"
-                    class="hover:text-[#4789F9] transition-colors">
+                    <a href="#tecnologia" class="hover:text-[#4F46E5] transition-colors">
                         Tecnologias
                     </a>
                 </li>
-                
             </ul>
         </nav>
     </div>
 
     <!-- Menu Celular -->
 
-    <div
-    class="hidden bg-[#B9D3FF] w-full shadow-lg z-50 fixed top-[60px]"
-    id="menuCelular"
-    >
-        <ul 
-        class="flex flex-col items-center py-4 text-2xl text-[#3533cb]"
-        >
-            <li
-            class="py-2 border-b border-[#3533cb]/20 w-4/5 text-center">
-                <a
-                class="hover:text-[#4789F9] transition-colors" 
-                href="#sobreNos">
+    <div class="hidden bg-[#F9FAFB] w-full shadow-lg z-50 fixed top-[60px]" id="menuCelular">
+        <ul class="flex flex-col items-center py-4 font-medium text-[18px] text-[#3533cb]">
+
+            <li class="py-2 border-b border-[#3533cb]/20 w-4/5 text-center">
+                <a class="hover:text-[#4789F9] transition-colors" href="#sobreNos">
                     Quem somos
                 </a>
             </li>
-            <li
-            class="py-2 border-b border-[#3533cb]/20 w-4/5 text-center">
-                <a
-                class="hover:text-[#4789F9] transition-colors" 
-                href="#objetivo">
+
+            <li class="py-2 border-b border-[#3533cb]/20 w-4/5 text-center">
+                <a class="hover:text-[#4789F9] transition-colors" href="#objetivo">
                     Objetivo
                 </a>
             </li>
-            <li
-            class="py-2 border-b border-[#3533cb]/20 w-4/5 text-center">
-                <a
-                class="hover:text-[#4789F9] transition-colors" 
-                href="#escopo">
+
+            <li class="py-2 border-b border-[#3533cb]/20 w-4/5 text-center">
+                <a class="hover:text-[#4789F9] transition-colors" href="#escopo">
                     Escopo
                 </a>
             </li>
-            <li
-            class="py-2 border-b border-[#3533cb]/20 w-4/5 text-center">
-                <a
-                class="hover:text-[#4789F9] transition-colors" 
-                href="#requisitos">
+
+            <li class="py-2 border-b border-[#3533cb]/20 w-4/5 text-center">
+                <a class="hover:text-[#4789F9] transition-colors" href="#requisitos">
                     Requisitos
                 </a>
             </li>
-            <li
-            class="py-2 w-4/5 text-center">
-                <a
-                class="hover:text-[#4789F9] transition-colors" 
-                href="#tecnologia">
+
+            <li class="py-2 w-4/5 text-center">
+                <a class="hover:text-[#4789F9] transition-colors" href="#tecnologia">
                     Tecnologias
                 </a>
             </li>
@@ -134,40 +105,42 @@
     
     <!-- Conteudo -->
 
-    <main 
-    class="flex flex-col items-center justify-center text-center w-3/4 mx-auto flex-grow">
-        <div 
-        class="mt-10 mb-10 ">  
-            <h1 
-            class="text-7xl font-bold text-[#B9D3FF]">Bem-vindo a SwiftBuy!</h1>
-            <span 
-            class="text-3xl text-gray-500">Sua Vitrine Digital Personalizada</span>
-        </div>
-            
-        <div
-        class="bg-gradient-to-r from-[#B9D3FF] to-blue-100 p-6 rounded-lg shadow-md" 
-        id="sobreNos">
-            <h1 
-            class="text-5xl mb-5 text-[#3533cb] ">
-                QUEM SOMOS?
-            </h1>
-            <p 
-            class="text-2xl max-w-4xl mx-auto leading-relaxed text-gray-700 ">
-                A SwiftBuy é uma empresa que oferece produtos de alta qualidade e um atendimento excepcional. Nosso objetivo é facilitar a sua vida, proporcionando uma experiência de compra online rápida, segura e personalizada. A comunicação direta e eficiente é a chave para construir relacionamentos duradouros com nossos clientes. Junte-se à SwiftBuy e descubra um novo jeito de comprar!
-            </p>
+    <main class="flex flex-col items-center sm:items-start ml-5 sm:pl-20 sm:w-3/4 mx-auto flex-grow">
+        <div class="mt-8 mb-10 flex flex-col lg:flex-row items-center gap-10" id="sobreNos">
+
+            <div class="flex flex-col"> 
+                <h1 class="mb-6 text-7xl font-bold text-[#030712]">
+                    Bem-vindo a SwiftBuy!
+                </h1>
+
+                <span class="text-3xl font-semibold text-[#4F46E5]">
+                    Sua Vitrine Digital Personalizada
+                </span>
+
+                <h1 class="mt-15 text-1xl font-bold mb-5 text-[#3533cb] ">
+                    QUEM SOMOS?
+                </h1>
+
+                <p class=" pr-18 text-[14px] text-[#030712] font-semibold max-w-4xl mx-auto leading-relaxed">
+                    A SwiftBuy é uma empresa que oferece produtos de alta qualidade e um atendimento excepcional. Nosso objetivo é facilitar a sua vida, proporcionando uma experiência de compra online rápida, segura e personalizada. A comunicação direta e eficiente é a chave para construir relacionamentos duradouros com nossos clientes. Junte-se à SwiftBuy e descubra um novo jeito de comprar!
+                </p>
+            </div>
+
+                <img 
+                    src="./assets/img/vetor1.jpg" 
+                    alt="Ilustração" 
+                    class="w-full max-w-[900px] lg:mr-[-450px]"
+                >
         </div>
     </main>
+
     <!-- Fim do Conteudo -->
     
     <!-- Rodape -->
-    <footer 
-    class="bg-[#B9D3FF] text-[#3533cb] py-10 w-full mt-10">
-        <div 
-        class="w-4/5 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-            <div 
-            class="flex justify-center md:justify-start">
-                <a 
-                    href="index.html">
+    <footer class="bg-[#4789F9] text-[#E0E7FF] py-10 w-full mt-10">
+        <div class="w-3/5 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div class="flex justify-center md:justify-start">
+                <a href="index.html">
                     <img 
                         src="assets/img/logo.png"
                         class="w-50 h-51 filter-blue"
@@ -175,60 +148,46 @@
                     >
                 </a>
             </div>
-            <div 
-            class="flex flex-col items-center md:items-start space-y-2">
-                <a 
-                href="#">
-                    <p 
-                    class="hover:text-[#4789F9] transition-colors">
+
+            <div class="flex flex-col items-center md:items-start space-y-2">
+                <a href="#">
+                    <p class="hover:text-[#3730A3] transition-colors">
                         Trabalhe Conosco
                     </p>
                 </a>
-                <a 
-                href="#">
-                    <p 
-                    class="hover:text-[#4789F9] transition-colors">
+                <a href="#">
+                    <p class="hover:text-[#3730A3] transition-colors">
                         Acessibilidade
                     </p>
                 </a>
-                <a 
-                href="#">
-                    <p 
-                    class="hover:text-[#4789F9] transition-colors">
+                <a href="#">
+                    <p class="hover:text-[#3730A3] transition-colors">
                         Politica de Privacidade
                     </p>
                 </a>
             </div>
-            <div 
-            class="flex flex-col items-center md:items-start space-y-2">
-                <a 
-                href="">
-                    <p 
-                    class="hover:text-[#4789F9] transition-colors">
+
+            <div class="flex flex-col items-center md:items-start space-y-2">
+                <a href="">
+                    <p class="hover:text-[#3730A3] transition-colors">
                         Suporte
                     </p>
                 </a>
 
-                <a 
-                href="">
-                    <p 
-                    class="hover:text-[#4789F9] transition-colors">
+                <a href="">
+                    <p class="hover:text-[#3730A3] transition-colors">
                         Entre em contato
                     </p>
                 </a>
 
-                <a 
-                href="">
-                    <p 
-                    class="hover:text-[#4789F9] transition-colors">
+                <a href="">
+                    <p class="hover:text-[#3730A3] transition-colors">
                         Perguntas Frequentes FAQ
                     </p>
                 </a>
 
-                <a 
-                href="">
-                    <p 
-                    class="hover:text-[#4789F9] transition-colors">
+                <a href="">
+                    <p class="hover:text-[#3730A3] transition-colors">
                         Termos e Condições
                     </p>
                 </a>
@@ -236,8 +195,7 @@
             </div>
         </div>
 
-        <div 
-        class="w-4/5 mx-auto mt-8 pt-4 border-t border-[#3533cb]/30 text-center">
+        <div class="w-4/5 mx-auto mt-8 pt-4 border-t border-[#3533cb]/30 text-center">
             <p>
                 &copy; 2025 SwiftBuy. Todos os direitos reservados.
             </p>
