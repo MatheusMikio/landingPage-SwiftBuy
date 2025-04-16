@@ -11,11 +11,17 @@ window.addEventListener('scroll', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.getElementById('menuBtn');
     const menuCelular = document.getElementById('menuCelular');
+    
+    menuBtn.addEventListener('click', () => {
+        menuCelular.classList.toggle('hidden');
+    });
+    
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 955) {
+            menuCelular.classList.add('hidden');
+        }
+    });
     if (menuBtn && menuCelular) {
-        menuBtn.addEventListener('click', () => {
-            menuCelular.classList.toggle('hidden');
-        });
-
         const links = menuCelular.querySelectorAll('a');
         links.forEach(link => {
             link.addEventListener('click', () => {
