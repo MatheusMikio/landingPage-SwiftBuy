@@ -8,4 +8,73 @@
     filter: brightness(0) saturate(100%) invert(23%) sepia(85%) saturate(3619%) hue-rotate(244deg) brightness(94%) contrast(94%);
 }
 
+#barraSuperior {
+    position: fixed; 
+    z-index: 1000;
+}
 
+.objetivos {
+    background-color: #f7f7f7; /* Cor de fundo clara */
+    padding: 50px 0;
+    max-width: 1200px;
+    
+}
+
+.objetivos .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.objetivos h5 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #2c2ab8; /* Cor do título */
+    
+}
+
+.objetivos .objetivos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid responsivo */
+    gap: 50px;
+    width: 100%;
+    
+}
+
+.objetivos .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.objetivos .objetivo {
+    background-color: #f6f6f6;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 14, 37, 0.299); /* Sombra suave */  
+    transition: transform 0.9s ease; 
+}
+
+.objetivos .objetivo:hover {
+    transform: translateY(-15px); /* Levanta o elemento em 5 pixels */
+}
+
+.objetivos .objetivo img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.objetivos .objetivo h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+    
+}
+
+.objetivos .objetivo p {
+    color: #666;
+    line-height: 1.6;
+}
