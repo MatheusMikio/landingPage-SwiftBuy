@@ -1,5 +1,6 @@
 # LandingPageSwiftBuy
  
+
 #Bem-vindo a SwiftBuy!
 Sua Vitrine Digital Personalizada
 
