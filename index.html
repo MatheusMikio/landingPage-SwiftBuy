@@ -34,12 +34,6 @@
         <nav class="hidden min-[955px]:block w-420">
             <ul class="flex justify-around items-center h-40  font-semibold text-[16px] text-[#0046a5]">
                 <li>
-                    <a href="#empresa" class="hover:text-[#4F46E5] transition-colors">
-                        Bredas
-                    </a>
-                </li>
-                
-                <li>
                     <a href="#sobreNos" class="hover:text-[#4F46E5] transition-colors">
                         Quem somos
                     </a>
@@ -62,6 +56,16 @@
                         Profissionais
                     </a>
                 </li>
+                <li>
+                    <a href="#disciplina" class="hover:text-[#4F46E5] transition-colors">
+                        Disciplina
+                    </a>
+                </li>
+                <li>
+                    <a href="#empresa" class="hover:text-[#4F46E5] transition-colors">
+                        Empresa
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -70,12 +74,6 @@
 
     <div class="hidden bg-[#F9FAFB] w-full shadow-lg z-50 fixed top-[60px]" id="menuCelular">
         <ul class="flex flex-col items-center py-4 font-medium text-[18px] text-[#0046a5]">
-
-            <li class="py-2 border-b border-[#3533cb]/20 w-4/5 text-center">
-                <a class="hover:text-[#4789F9] transition-colors" href="#empresa">
-                    Bredas
-                </a>
-            </li>
 
             <li class="py-2 border-b border-[#3533cb]/20 w-4/5 text-center">
                 <a class="hover:text-[#4789F9] transition-colors" href="#sobreNos">
@@ -100,6 +98,18 @@
                     Profissionais
                 </a>
             </li>
+
+            <li class="py-2 border-b border-[#3533cb]/20 w-4/5 text-center">
+                <a class="hover:text-[#4789F9] transition-colors" href="#disciplina">
+                    Disciplina
+                </a>
+            </li>
+
+            <li class="py-2 border-b border-[#3533cb]/20 w-4/5 text-center">
+                <a class="hover:text-[#4789F9] transition-colors" href="#empresa">
+                    Empresa
+                </a>
+            </li>
         </ul>
     </div>
 
@@ -107,61 +117,53 @@
     
     <!-- Conteudo -->
 
-    <main class="flex flex-col items-center px-4 w-full mx-auto flex-grow">
+    <main class="flex flex-col items-center sm:items-start ml-5 sm:pl-15 sm:w-3/4 mx-auto flex-grow ">
 
-        <div class="mt-30 mb-10 flex flex-col lg:flex-row items-center max-w-7xl w-full mx-auto" id="empresa">
-            <img src="assets/img/bredas-logo.jpg" alt="Logo Bredas" class="w-full max-w-[400px] lg:mr-[22px] mb-6 lg:mb-0">
-            <div class="flex flex-col max-w-350">
-                <p class="text-[23px] text-[#030712] font-semibold leading-relaxed pl-4 md:pl-8 lg:pl-12">
-                    Desde 1990 a Breda's Sistemas atua no Brasil, sendo reconhecida por sua excelência no desenvolvimento de softwares, visando inovação e vantagens competitivas para organizações. Nossas soluções já contribuiu para milhares de empreendedores e resultou em uma relação de confiança e satisfação, fruto de muita dedicação e amor no que fazemos.
-                </p>
-            </div>
-        </div>
+        <div class="mt-8 mb-10 flex flex-col lg:flex-row items-center gap-10" id="sobreNos">
 
-        <div class="mt-8 mb-10 flex flex-col lg:flex-row items-center gap-10 max-w-7xl w-full mx-auto" id="sobreNos">
-            <div class="flex flex-col w-full"> 
-                <h1 class="mb-6 text-4xl md:text-7xl font-bold text-[#030712]">
+            <div class="flex flex-col"> 
+                <h1 class="mb-6 text-7xl font-bold text-[#030712]">
                     Bem-vindo a SwiftBuy!
                 </h1>
 
-                <span class="text-xl md:text-3xl font-semibold text-[#4F46E5]">
+                <span class="text-3xl font-semibold text-[#4F46E5]">
                     Sua Vitrine Digital Personalizada
                 </span>
 
-                <h1 class="mt-15 text-1xl font-bold mb-5 text-[#3533cb]">
+                <h1 class="mt-15 text-1xl font-bold mb-5 text-[#3533cb] ">
                     QUEM SOMOS?
                 </h1>
 
-                <p class="text-[14px] text-[#030712] font-semibold leading-relaxed">
+                <p class=" pr-18 text-[14px] text-[#030712] font-semibold max-w-4xl mx-auto leading-relaxed">
                     A SwiftBuy é uma empresa que oferece produtos de alta qualidade e um atendimento excepcional. Nosso objetivo é facilitar a sua vida, proporcionando uma experiência de compra online rápida, segura e personalizada. A comunicação direta e eficiente é a chave para construir relacionamentos duradouros com nossos clientes. Junte-se à SwiftBuy e descubra um novo jeito de comprar!
                 </p>
             </div>
 
-            <img 
-                src="./assets/img/vetor1.jpg" 
-                alt="Ilustração" 
-                class="w-full max-w-[500px] lg:max-w-[600px]"
-            >
+                <img 
+                    src="./assets/img/vetor1.jpg" 
+                    alt="Ilustração" 
+                    class="w-full max-w-[900px] lg:mr-[-450px]"
+                >
         </div>
 
-        <section class="objetivos mt-10 max-w-7xl w-full mx-auto" id="objetivo">
-            <div class="container mx-auto px-4">
-                <h5 class="text-xl font-semibold mb-6">Nossos Objetivos:</h5>
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="objetivo p-4 border rounded-lg shadow-sm">
-                        <img src="assets/img/icons-clientes.png" alt="Aumentar Clientes" class="mx-auto h-16 mb-4">
-                        <h3 class="text-lg font-bold text-center mb-2">Atrair Novos Clientes</h3>
-                        <p class="text-sm">Uma interface acessível e intuitiva ela convida os visitantes a entrar, facilita a navegação pelos seus produtos e serviços, e garante que a experiência seja agradável, aumentando as chances de que esses visitantes se tornem seus novos clientes.</p>
+        <section class="objetivos mt-10" id="objetivo">
+            <div class="container">
+                <h5 class=" lg:ml-62 lg:pb-6">Nossos Objetivos:</h5>
+                <div class="objetivos-grid">
+                    <div class="objetivo">
+                        <img src="assets/img/icons-clientes.png" alt="Aumentar Clientes">
+                        <h3>Atrair Novos Clientes</h3>
+                        <p>Uma interface acessível e intuitiva ela convida os visitantes a entrar, facilita a navegação pelos seus produtos e serviços, e garante que a experiência seja agradável, aumentando as chances de que esses visitantes se tornem seus novos clientes. .</p>
                     </div>
-                    <div class="objetivo p-4 border rounded-lg shadow-sm">
-                        <img src="assets/img/icons-navegação.png" alt="Facilitar a navegação" class="mx-auto h-16 mb-4">
-                        <h3 class="text-lg font-bold text-center mb-2">Ótima Navegação</h3>
-                        <p class="text-sm">Uma navegação otimizada é fundamental para o sucesso de qualquer sistema de informação. Ao implementar um design de informação consistente e bem organizado, proporcionamos aos usuários uma experiência fluida e intuitiva.</p>
+                    <div class="objetivo">
+                        <img src="assets/img/icons-navegação.png" alt="Facilitar a navegação">
+                        <h3>Ótima Navegação</h3>
+                        <p>Uma navegação otimizada é fundamental para o sucesso de qualquer sistema de informação. Ao implementar um design de informação consistente e bem organizado, proporcionamos aos usuários uma experiência fluida e intuitiva.</p>
                     </div>
-                    <div class="objetivo p-4 border rounded-lg shadow-sm">
-                        <img src="assets/img/icons-satisfaçãoClientes.png" alt="Melhorar a Satisfação dos Clientes" class="mx-auto h-16 mb-4">
-                        <h3 class="text-lg font-bold text-center mb-2">Melhorar a satisfação dos Clientes</h3>
-                        <p class="text-sm">Implementar um sistema de redirecionamento rápido para o WhatsApp, permitindo que o usuário tire dúvidas com o vendedor e conclua a compra de forma rápida e direta.</p>
+                    <div class="objetivo">
+                        <img src="assets/img/icons-satisfaçãoClientes.png" alt="Melhorar a Satisfação dos Clientes">
+                        <h3>Melhorar a satisfação dos Clientes.</h3>
+                        <p>Implementar um sistema de redirecionamento rápido para o WhatsApp, permitindo que o usuário tire dúvidas com o vendedor e conclua a compra de forma rápida e direta.</p>
                     </div>
                 </div>
             </div>
@@ -172,8 +174,8 @@
 
     <!-- Como Funciona -->
 
-    <div class="flex flex-col items-center gap-3 p-6 max-w-7xl mx-auto" id="comoFunciona">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-12 w-full">
+    <div class="flex flex-col items-center gap-3 p-6" id="comoFunciona">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-12 max-w-6xl w-full">
             <div class="border-2 border-indigo-600 rounded-xl p-7 max-w-lg w-full text-[14px] gap-6 font-semibold shadow-sm">
                 <h1 class="font-bold text-[#3533cb] text-[18px]">Como Funciona para Clientes?</h1>
                 <p class="mt-2">Encontre os melhores produtos e compre direto com o vendedor!</p>
@@ -185,11 +187,11 @@
                 </ol>
                 <p class="text-green-600">✅ Sem taxas, sem complicação. Você fala direto com quem vende!</p>
             </div>
-            <img src="./assets/img/clientepng.png" alt="cliente" class="w-full max-w-[500px] h-auto">
+            <img src="./assets/img/clientepng.png" alt="cliente" class="w-full h-auto md:w-lg lg:max-x-2xl">
         </div>
 
-        <div class="flex flex-col md:flex-row items-center justify-between gap-12 w-full mt-8">
-            <img src="./assets/img/vendaspng.png" alt="vendedores" class="w-full max-w-[500px] h-auto md:order-1 lg:order-none">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-12 max-w-6xl w-full">
+            <img src="./assets/img/vendaspng.png" alt="vendedores" class="w-full h-auto md:w-lg lg:max-x-2xl">
             <div class="border-2 border-indigo-600 rounded-xl p-7 max-w-lg w-full text-[14px] gap-3 font-semibold shadow-sm">
                 <h1 class="font-bold text-[#3533cb] text-[18px]">Como Funciona para Vendedores?</h1>
                 <p class="mt-2">Venda seus produtos de forma simples!</p>
@@ -217,7 +219,7 @@
               </div>
       
               <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 max-md:justify-center mt-12 max-md:max-w-xs mx-auto">
-
+                <!-- Membro 1 -->
                 <div class="border rounded-md overflow-hidden">
                     <img src="assets/img/membros/Jenie.jpg" class="w-full object-contain aspect-square object-top" />
                   
@@ -237,17 +239,17 @@
                   
                       <div class="mt-4 text-center">
                         <div class="flex gap-5">
-
+                          <!-- Email -->
                           <a href="mailto:jdft1101@gmail.com" target="_blank" title="Email">
                               <i class="bi bi-envelope-fill text-xl text-red-500"></i>
                           </a>
                   
-
+                          <!-- LinkedIn -->
                           <a href="https://www.linkedin.com/in/jeniedanielle" target="_blank" title="LinkedIn">
                               <i class="bi bi-linkedin text-xl text-blue-600"></i>
                           </a>
                   
-  
+                          <!-- GitHub -->
                           <a href="https://github.com/JenieDanielle" target="_blank" title="GitHub">
                               <i class="bi bi-github text-xl text-black"></i>
                           </a>
@@ -274,15 +276,15 @@
                       </div>
                   
                       <div class="space-x-4 mt-4 text-slate-100 text-sm">
-
+                        <!-- Email -->
                         <a href="mailto:maisaamaral220@gmail.com" target="_blank" title="Email">
                             <i class="bi bi-envelope-fill text-xl text-red-500"></i>
                         </a>
-
+                        <!-- LinkedIn -->
                         <a href="https://www.linkedin.com/in/maisaamaral" target="_blank" title="LinkedIn">
                             <i class="bi bi-linkedin text-xl text-blue-600"></i>
                         </a>
-
+                        <!-- GitHub -->
                         <a href="https://github.com/maisamarall" target="_blank" title="GitHub">
                             <i class="bi bi-github text-xl text-black"></i>
                         </a>
@@ -308,15 +310,15 @@
                       </div>
                   
                       <div class="space-x-4 mt-4 text-slate-100 text-sm">
-
+                        <!-- Email -->
                         <a href="mailto:mateushideoyamashita@hotmail.com" target="_blank" title="Email">
                             <i class="bi bi-envelope-fill text-xl text-red-500"></i>
                         </a>
-
+                        <!-- LinkedIn -->
                         <a href="https://www.linkedin.com/in/mateus-hideo-yamashita-santos-6445bb234/" target="_blank" title="LinkedIn">
                             <i class="bi bi-linkedin text-xl text-blue-600"></i>
                         </a>
- 
+                        <!-- GitHub -->
                         <a href="https://github.com/M-Hideo-Yamashita" target="_blank" title="GitHub">
                             <i class="bi bi-github text-xl text-black"></i>
                         </a>
@@ -342,15 +344,15 @@
                       </div>
                   
                       <div class="space-x-4 mt-4 text-slate-100 text-sm">
-
+                        <!-- Email -->
                         <a href="mailto:matheusmikio15@gmail.com" target="_blank" title="Email">
                             <i class="bi bi-envelope-fill text-xl text-red-500"></i>
                         </a>
-    
+                        <!-- LinkedIn -->
                         <a href="https://www.linkedin.com/in/matheus-mikio-7a79a2193/" target="_blank" title="LinkedIn">
                             <i class="bi bi-linkedin text-xl text-blue-600"></i>
                         </a>
- 
+                        <!-- GitHub -->
                         <a href="https://github.com/MatheusMikio" target="_blank" title="GitHub">
                             <i class="bi bi-github text-xl text-black"></i>
                         </a>
@@ -376,15 +378,15 @@
                       </div>
                   
                       <div class="space-x-4 mt-4 text-slate-100 text-sm">
-
+                        <!-- Email -->
                         <a href="mailto:adornosamara165@gmail.com" target="_blank" title="Email">
                             <i class="bi bi-envelope-fill text-xl text-red-500"></i>
                         </a>
-    
+                        <!-- LinkedIn -->
                         <a href="https://www.linkedin.com/in/samara-adorno-91bb572a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
                             <i class="bi bi-linkedin text-xl text-blue-600"></i>
                         </a>
-
+                        <!-- GitHub -->
                         <a href="https://github.com/Samara-Adorno" target="_blank" title="GitHub">
                             <i class="bi bi-github text-xl text-black"></i>
                         </a>
@@ -426,6 +428,48 @@
         </div>
      </div>
     <!-- Fim do Profissionais -->
+
+    <!-- Disciplina -->
+    <div class="mt-8 pt-25 mb-10 flex flex-col lg:flex-row items-center gap-10" id="disciplina">
+
+        <div class="flex flex-col"> 
+            <h1 class="mt-15 text-1xl font-bold mb-5 text-[#3533cb] ml-20">
+                Disciplina: Fábrica de Projetos Ágeis
+            </h1>
+
+            <p class=" pr-18 text-[20px] text-[#030712] font-semibold max-w-4xl mx-auto leading-relaxed  ml-20">
+                A disciplina de Fábrica de Projetos Ágeis, no curso de Análise e Desenvolvimento de Sistemas, tem como objetivo proporcionar aos estudantes uma vivência prática e colaborativa, em que uma empresa que é escolhida pela universidade propõe desafios e para que seja possível ser realizado uma solução para esse desafio. 
+                Os alunos devem desenvolver um software, utilizando metodologias ágeis como Scrum, Kanban e XP, em que ao longo das aulas dessa disciplina, os alunos trabalham em equipes multidisciplinares, simulando um ambiente real de desenvolvimento, desde a definição de requisitos até a entrega de funcionalidades. 
+                Através de sprints, reuniões de planejamento e revisões constantes, os estudantes desenvolvem não apenas competências técnicas, como programação e testes, mas também habilidades interpessoais, como comunicação, gestão de tempo e trabalho em equipe. 
+                Essa abordagem prática prepara os futuros profissionais para os desafios do mercado de trabalho, onde a agilidade e a adaptabilidade são diferenciais essenciais.
+            </p>
+        </div>
+
+            <img 
+                src="./assets/img/unimar.png" 
+                alt="Ilustração" 
+                class="w-full max-w-[500px] lg:mr-[-450px] mt-20"
+            >
+    </div>
+    <!-- Fim de disciplina -->
+
+    <!-- Empresa -->
+
+    <div class="mt-40 mb-10 flex flex-col lg:flex-row" id="empresa">
+
+        <img src="assets/img/bredas-logo.jpg" alt="" class="w-full max-w-[400px] lg:mr-[22px]">
+    
+        <div class="ml-50 flex flex-col w-full">
+            <h1 class="mt-15 text-1xl font-bold mb-5 text-[#3533cb] ml-50">
+                Empresa: Breda's Sistemas
+            </h1>
+    
+            <p class="pr-18 text-[23px] text-[#030712] font-semibold max-w-4xl mx-auto leading-relaxed break-normal">
+                Desde 1990 a Breda's Sistemas atua no Brasil, sendo reconhecida por sua excelência no desenvolvimento de softwares, visando inovação e vantagens competitivas para organizações. Nossas soluções já contribuiu para milhares de empreendedores e resultou em uma relação de confiança e satisfação, fruto de muita dedicação e amor no que fazemos.
+            </p>
+        </div>
+    
+    </div>    
 
     <!-- Rodape -->
     <footer class="bg-[#4789F9] text-[#E0E7FF] py-10 w-full mt-10">
